@@ -20,30 +20,36 @@ hero:
       link: https://github.com/Julakk/DockPanel
 
 features:
-  - icon: ⚡
+  - icon:
+      src: /icons/bolt.svg
     title: Install satu perintah
     details: Skrip install.sh memasang Panel (PHP, MariaDB, Nginx) atau node Wings (Docker + Go) di VPS Ubuntu, dan juga menangani update.
     link: /guide/install-panel
     linkText: Panduan install
-  - icon: 📁
+  - icon:
+      src: /icons/folder.svg
     title: File manager lengkap
     details: Upload, edit, Zip, Extract, ubah izin, dan unduh file dari URL langsung dari browser, termasuk di HP.
-  - icon: 💾
+  - icon:
+      src: /icons/drive.svg
     title: Backup dan restore
     details: Buat backup tar.gz dengan checksum SHA-256, unduh, lalu restore saat server mati. Jika restore gagal, file server tidak berubah.
     link: /guide/backups
     linkText: Soal backup
-  - icon: 🔌
+  - icon:
+      src: /icons/plug.svg
     title: SFTP bawaan
     details: Wings punya server SFTP sendiri. Login diverifikasi ke Panel, dan tiap pengguna terkunci di folder servernya.
     link: /guide/sftp
     linkText: Soal SFTP
-  - icon: 🔐
+  - icon:
+      src: /icons/shield.svg
     title: Keamanan berlapis
     details: 2FA TOTP dengan recovery code dan anti-replay, security header, daemon_token terenkripsi, dan token console per permission.
     link: /guide/two-factor
     linkText: Soal 2FA
-  - icon: 🗄️
+  - icon:
+      src: /icons/database.svg
     title: Database per server
     details: Buat database MySQL sendiri dari panel, rotate password, dan masuk ke phpMyAdmin lewat single sign-on sekali pakai.
 ---
