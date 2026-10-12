@@ -48,6 +48,18 @@ Pasang fail2ban:
 apt install -y fail2ban
 ```
 
+Panel mencatat alasan tiap penolakan. fail2ban hanya menghitung dua alasan yang terjadi **sebelum** password diperiksa:
+
+| Alasan di log | Artinya | Dihitung fail2ban |
+|---|---|---|
+| `format username` | Username bukan berbentuk `email.idserver` | Ya |
+| `user nggak ada` | Format benar, tapi emailnya tidak terdaftar | Ya |
+| `password salah` | Email valid, password keliru | Tidak |
+| `server nggak ada di node ini` | Password benar, server bukan di node ini | Tidak |
+| `server suspended` | Password benar, server disuspend | Tidak |
+
+Penolakan yang terjadi setelah password benar juga tidak dihitung, supaya pemain asli tidak ikut terblokir. Untuk `password salah`, perlindungannya ada di Panel sendiri: percobaan dibatasi 20 per IP dan 10 per username dalam semenit, setelah itu Panel membalas HTTP 429. Respons 429 itu tidak ditulis ke log, jadi fail2ban hanya melihat percobaan sebelum batas tersebut.
+
 Buat filter yang hanya menghitung dua alasan pertama:
 
 ```bash
