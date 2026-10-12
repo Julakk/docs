@@ -21,7 +21,7 @@ Setelah itu isi `auth_token` di `config.json` dengan `daemon_token` dari halaman
 
 ## Build manual
 
-Butuh Go 1.22 atau lebih baru.
+Versi Go minimal tertulis di `go.mod` dan README repo DockWings. Installer memasang versi yang sesuai secara otomatis.
 
 ```bash
 git clone https://github.com/Julakk/DockWings.git

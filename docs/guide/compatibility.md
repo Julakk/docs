@@ -11,7 +11,7 @@ Beberapa fitur di Panel memanggil endpoint yang baru ada di versi Wings tertentu
 | SFTP bawaan | 0.18.1 | 0.5.0 |
 
 ::: tip
-Aturan praktis: update Wings dulu atau bersamaan dengan Panel, supaya tombol baru di Panel tidak memanggil endpoint yang belum ada di node.
+Urutan update yang aman: **Panel dulu, lalu Wings**. Setelah Panel diperbarui, update Wings di semua node secepatnya. Sampai itu selesai, tombol baru di Panel yang butuh versi Wings lebih tinggi (lihat tabel) tidak akan berfungsi di node yang belum diperbarui.
 :::
 
 ## Versi saat ini

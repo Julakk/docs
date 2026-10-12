@@ -20,6 +20,7 @@ Browser ──► DockPanel (Laravel) ──HTTP + Bearer token──► DockWin
 - CRUD Node, Allocation, Location, Nest, Egg, Server, dan User
 - Import Egg dalam format JSON yang kompatibel dengan Pterodactyl
 - Application API (token Sanctum), Database Host, dan Mount
+- Masa aktif server dengan auto-suspend saat expired dan pengingat email H-3
 - Pengaturan panel: nama, kewajiban 2FA, dan bahasa default
 
 **Client area**

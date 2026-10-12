@@ -26,7 +26,9 @@ Wings dikonfigurasi lewat `config.json` (salin dari `config.example.json`).
 
 ## TLS
 
-Jika `ssl.enabled` diaktifkan, scheme node di Panel harus `https`. Mengaktifkan `ssl.enabled` tanpa `cert` atau `key` ditolak saat startup dengan pesan error yang jelas. Tanpa SSL, Wings menulis peringatan di log.
+Scheme node di Panel harus sama dengan pengaturan SSL Wings: `http` jika `ssl.enabled` false, dan `https` jika true. Jika tidak cocok, Panel menampilkan error cURL 35.
+
+Mengaktifkan `ssl.enabled` tanpa `cert` atau `key` ditolak saat startup dengan pesan error yang jelas. Tanpa SSL, Wings menulis peringatan di log.
 
 ## Halaman Configuration di Panel
 
