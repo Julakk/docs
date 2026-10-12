@@ -97,9 +97,5 @@ export default defineConfig({
     sidebarMenuLabel: 'Menu',
     darkModeSwitchLabel: 'Tema',
 
-    footer: {
-      message: 'Panel dan Wings dirilis di bawah AGPL-3.0.',
-      copyright: 'Julak Junior'
-    }
   }
 })

@@ -122,3 +122,47 @@
   fill: var(--vp-c-text-2);
   font-size: 12px;
 }
+
+/* Footer hak cipta di semua halaman */
+.site-copyright {
+  border-top: 1px solid var(--vp-c-divider);
+  padding: 24px 24px 32px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
+.site-copyright p {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.site-copyright p + p {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+}
+
+.site-copyright a {
+  color: var(--vp-c-text-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.site-copyright a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+/* Halaman dengan sidebar: geser footer agar tidak tertutup sidebar */
+@media (min-width: 960px) {
+  .Layout:has(.VPContent.has-sidebar) .site-copyright {
+    padding-left: calc(var(--vp-sidebar-width) + 24px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .Layout:has(.VPContent.has-sidebar) .site-copyright {
+    padding-left: calc((100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width) + 24px);
+  }
+}
