@@ -1,0 +1,124 @@
+/* Warna brand diambil dari logo DockPanel (#05459c). */
+:root {
+  --vp-c-brand-1: #05459c;
+  --vp-c-brand-2: #0757c0;
+  --vp-c-brand-3: #05459c;
+  --vp-c-brand-soft: rgba(5, 69, 156, 0.12);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #05459c 20%, #3b82f6);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #05459c 50%, #4f8cff 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #6ea0ff;
+  --vp-c-brand-2: #8bb4ff;
+  --vp-c-brand-3: #1f5fc9;
+  --vp-c-brand-soft: rgba(110, 160, 255, 0.16);
+
+  --vp-home-hero-name-background: linear-gradient(120deg, #8bb4ff 20%, #4f8cff);
+}
+
+/* Ikon di hero: sudut membulat dan bayangan lembut */
+.VPHero .image-src {
+  border-radius: 24px;
+  box-shadow: 0 12px 40px rgba(5, 69, 156, 0.35);
+}
+
+/* Navbar: ikon kecil dengan sudut membulat */
+.VPNavBarTitle .logo {
+  border-radius: 6px;
+}
+
+/* Bagian di bawah fitur pada landing page */
+.VPHome .vp-doc {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 24px 48px;
+}
+
+.VPHome .vp-doc h2 {
+  border-top: none;
+  margin-top: 32px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.badge {
+  display: inline-flex;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.badge b,
+.badge i {
+  padding: 0 8px;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+}
+
+.badge b {
+  background: #555;
+}
+
+.badge i {
+  background: #05459c;
+}
+
+/* Diagram arsitektur (SVG inline, ikut tema terang/gelap) */
+.diagram {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.diagram svg {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  color: var(--vp-c-text-2);
+}
+
+.diagram .dg-box {
+  fill: var(--vp-c-bg-soft);
+  stroke: var(--vp-c-divider);
+  stroke-width: 1.5;
+}
+
+.diagram .dg-box-brand {
+  fill: var(--vp-c-brand-soft);
+  stroke: var(--vp-c-brand-1);
+  stroke-width: 1.5;
+}
+
+.diagram .dg-title {
+  fill: var(--vp-c-text-1);
+  font-size: 16px;
+  font-weight: 600;
+  text-anchor: middle;
+}
+
+.diagram .dg-sub {
+  fill: var(--vp-c-text-2);
+  font-size: 11px;
+  text-anchor: middle;
+}
+
+.diagram .dg-line {
+  stroke: var(--vp-c-text-3);
+  stroke-width: 1.5;
+}
+
+.diagram .dg-label {
+  fill: var(--vp-c-text-2);
+  font-size: 12px;
+}

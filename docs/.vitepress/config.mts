@@ -4,16 +4,37 @@ import { defineConfig } from 'vitepress'
 // Kalau pakai domain sendiri atau Cloudflare Pages, set env VITEPRESS_BASE=/
 const base = process.env.VITEPRESS_BASE ?? '/docs/'
 
+// URL publik situs (tanpa slash di akhir), dipakai untuk gambar preview Open Graph.
+// Kalau pakai domain sendiri, set env SITE_URL=https://domain-kamu.com
+const siteUrl = process.env.SITE_URL ?? 'https://julakk.github.io/docs'
+const siteTitle = 'DockPanel'
+const siteDescription =
+  'Panel manajemen game server self-hosted (DockPanel) dan daemon-nya (DockWings).'
+
 export default defineConfig({
   lang: 'id-ID',
-  title: 'DockPanel',
-  description: 'Panel manajemen game server self-hosted (DockPanel) dan daemon-nya (DockWings).',
+  title: siteTitle,
+  description: siteDescription,
   base,
   cleanUrls: true,
   lastUpdated: true,
-  head: [['meta', { name: 'theme-color', content: '#3451b2' }]],
+  head: [
+    ['meta', { name: 'theme-color', content: '#05459c' }],
+    ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: siteTitle }],
+    ['meta', { property: 'og:title', content: `${siteTitle} — Panel game server self-hosted` }],
+    ['meta', { property: 'og:description', content: siteDescription }],
+    ['meta', { property: 'og:url', content: siteUrl }],
+    ['meta', { property: 'og:image', content: `${siteUrl}/og.png` }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: `${siteUrl}/og.png` }]
+  ],
 
   themeConfig: {
+    logo: '/icon.png',
     nav: [
       { text: 'Panduan', link: '/guide/what-is', activeMatch: '/guide/' },
       { text: 'Referensi', link: '/reference/wings-api', activeMatch: '/reference/' },
@@ -45,7 +66,8 @@ export default defineConfig({
             { text: 'Two-Factor Authentication', link: '/guide/two-factor' },
             { text: 'SFTP', link: '/guide/sftp' },
             { text: 'Backup', link: '/guide/backups' },
-            { text: 'Kompatibilitas versi', link: '/guide/compatibility' }
+            { text: 'Kompatibilitas versi', link: '/guide/compatibility' },
+            { text: 'Troubleshooting dan FAQ', link: '/guide/troubleshooting' }
           ]
         }
       ],
