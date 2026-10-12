@@ -48,7 +48,7 @@ Pasang fail2ban:
 apt install -y fail2ban
 ```
 
-Buat filter. Filter ini hanya menghitung penolakan dengan alasan `format username` dan `user nggak ada`:
+Buat filter yang hanya menghitung dua alasan pertama:
 
 ```bash
 cat > /etc/fail2ban/filter.d/dockpanel-sftp.conf << 'EOT'
