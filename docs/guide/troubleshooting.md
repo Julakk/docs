@@ -15,6 +15,7 @@ Semua request ke Wings memakai Bearer token. Pastikan `auth_token` di `config.js
 - Port SFTP (default `2022`, diatur lewat `sftp_addr`) harus terbuka di firewall. Installer membukanya otomatis jika `ufw` aktif.
 - Pakai username SFTP dari tab **Settings** pada halaman server.
 - Subuser dengan akses read-only tidak bisa menulis file lewat SFTP.
+- Kalau salah format username berkali-kali, IP kamu bisa diblokir sementara oleh fail2ban (hanya kalau admin memasangnya, lihat [Mengamankan VPS](/guide/hardening)). Tunggu blokirnya berakhir atau minta admin melepasnya.
 
 ## Upload file gagal dengan Error 413
 
