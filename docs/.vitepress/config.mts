@@ -68,6 +68,7 @@ export default defineConfig({
             { text: 'SFTP', link: '/guide/sftp' },
             { text: 'Backup', link: '/guide/backups' },
             { text: 'Kompatibilitas versi', link: '/guide/compatibility' },
+            { text: 'Egg yang sudah diuji', link: '/guide/tested-eggs' },
             { text: 'Mengamankan VPS', link: '/guide/hardening' },
             { text: 'Troubleshooting dan FAQ', link: '/guide/troubleshooting' }
           ]

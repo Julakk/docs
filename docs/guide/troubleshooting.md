@@ -64,3 +64,7 @@ Panel dulu, lalu Wings. Lihat [Update](/guide/update).
 
 **Egg dari Pterodactyl bisa dipakai?**
 Bisa. Import Egg menerima JSON dengan format yang kompatibel dengan Pterodactyl.
+
+## Console menampilkan `[[: not found`
+
+Egg memakai sintaks bash, tetapi Wings menjalankan start command lewat `/bin/sh`. Perbaiki dengan memperbarui DockWings ke **v0.5.3** atau lebih baru. Perubahan ini hanya berlaku untuk container yang dibuat setelah update, jadi server lama perlu dibuat ulang. Lihat [Egg yang sudah diuji](/guide/tested-eggs).
