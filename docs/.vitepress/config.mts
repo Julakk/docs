@@ -54,6 +54,7 @@ export default defineConfig({
           text: 'Mulai',
           items: [
             { text: 'Apa itu DockPanel?', link: '/guide/what-is' },
+            { text: 'Persyaratan dan OS', link: '/guide/requirements' },
             { text: 'Instalasi Panel', link: '/guide/install-panel' },
             { text: 'Instalasi Wings (node)', link: '/guide/install-wings' },
             { text: 'Update', link: '/guide/update' }
