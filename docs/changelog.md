@@ -54,7 +54,6 @@ Ringkasan rilis terbaru. Changelog lengkap ada di repo masing-masing:
 ## DockWings
 
 ## [0.5.4] - 2026-10-13
-> "Hapus server sekaligus datanya, kalau diminta." 🐧
 
 ### Added
 
@@ -66,7 +65,6 @@ Ringkasan rilis terbaru. Changelog lengkap ada di repo masing-masing:
 - Versi daemon jadi 0.5.4.
 
 ## [0.5.3] - 2026-10-13
-> "Egg Pterodactyl yang memakai sintaks bash sekarang bisa jalan." 🐧
 
 ### Fixed
 
