@@ -49,7 +49,7 @@ Sejak Panel v0.19.0, console token membutuhkan permission `console.access`. Beri
 
 ## Error database setelah update Panel
 
-Jalankan `php artisan migrate` di folder Panel. Beberapa rilis menambah kolom atau tabel dan juga punya langkah tambahan. Baca catatan versinya di [changelog](/changelog).
+Jalankan `php artisan migrate` di folder Panel. Beberapa rilis menambah kolom atau tabel dan juga punya langkah tambahan. Baca catatan versinya di [changelog](/changelog/).
 
 ## FAQ
 

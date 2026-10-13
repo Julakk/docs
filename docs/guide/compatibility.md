@@ -21,4 +21,4 @@ Berdasarkan changelog per 12 Oktober 2026:
 - **DockPanel** 0.19.0
 - **DockWings** 0.5.2
 
-Lihat [changelog](/changelog) untuk detail tiap rilis.
+Lihat [changelog](/changelog/) untuk detail tiap rilis.

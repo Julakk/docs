@@ -25,7 +25,7 @@ Contohnya Panel v0.19.0, yang mengenkripsi `daemon_token` node di database.
 
 ## Urutan update
 
-1. Baca [changelog](/changelog) untuk versi yang dituju.
+1. Baca [changelog](/changelog/) untuk versi yang dituju.
 2. Cek [kompatibilitas versi](/guide/compatibility). Fitur baru di Panel sering butuh versi Wings minimum tertentu.
 3. Update Panel, jalankan `php artisan migrate` bila perlu.
 4. Update Wings di setiap node.

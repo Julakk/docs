@@ -38,7 +38,7 @@ export default defineConfig({
     nav: [
       { text: 'Panduan', link: '/guide/what-is', activeMatch: '/guide/' },
       { text: 'Referensi', link: '/reference/wings-api', activeMatch: '/reference/' },
-      { text: 'Changelog', link: '/changelog' },
+      { text: 'Changelog', link: '/changelog/', activeMatch: '/changelog/' },
       {
         text: 'GitHub',
         items: [
@@ -49,6 +49,16 @@ export default defineConfig({
     ],
 
     sidebar: {
+      '/changelog/': [
+        {
+          text: 'Changelog',
+          items: [
+            { text: 'Ringkasan', link: '/changelog/' },
+            { text: 'DockPanel', link: '/changelog/dockpanel' },
+            { text: 'DockWings', link: '/changelog/dockwings' }
+          ]
+        }
+      ],
       '/guide/': [
         {
           text: 'Mulai',
